@@ -4,7 +4,7 @@
 
 ・git bashを開く
 
-・cd OneDrive/デスクトップ/designcafe/
+・cd OneDrive/デスクトップ/banditz18th/
 
 ・git add .
 
