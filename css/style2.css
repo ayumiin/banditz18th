@@ -4,6 +4,11 @@
     
 }
 
+body{
+    background-color:#e9e5dd;
+    
+}
+
 
 .main-visual{
     width: 100%;
@@ -19,8 +24,9 @@
 
 
 .main-visual h{
+   
     border: 0.5px solid #fff;
-    margin-left: 500px;
+    margin-left: 560px;
     width: 400px;
     position: absolute;
     color: #fff;
@@ -28,8 +34,8 @@
     text-align: center;
     font-size: 70px;
     font-family: acumin-pro, sans-serif; 
-font-weight: 500; 
-    font-style: normal;
+    font-weight: 600; 
+    font-style: normal; 
 }
 
 ul{
@@ -45,9 +51,18 @@ li{
     font-weight: 700;
     border-left: solid 1px black;
     font-size: 25px;
-    width: 250px;
-    
+    width: 250px;   
 }
+
+li a{
+    color: #555;
+    transition: 0.4s;
+}
+
+li a:hover{
+    color: black;
+}
+
 
 #home{
     border-left: none;
@@ -56,24 +71,26 @@ li{
 
 .content{
     width: 100%;
-    height: 2900px;
+    height: 2850px;
     
 }
 
+
 .top-title h{
-    padding-left: 510px;
+    color: #555;
+    padding-left: 490px;
     font-family:poleno, sans-serif; 
-    font-weight: 700;
+    font-weight: 5600;
     font-size: 60px;
 }
 
 .top-title{
     background-color: #fff;
-    padding-top: 40px;
+    padding-top: 60px;
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: solid 1px 
+    margin-left: 150px;
+    margin-right: 150px;
+    border: solid 0.5px #fff;
 }
 #box1{
     display: flex;
@@ -81,6 +98,8 @@ li{
 }
 
 .item h1 {
+    border-bottom: solid #eee 1px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -89,17 +108,20 @@ li{
 }
 
 #item1{
-    border: solid 0.5px black;
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+    border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 #item2{
-    border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+    border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 .button{
@@ -187,17 +209,23 @@ li{
 }
 
 #item3{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 #item4{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
+}
+
+#item4 h1{
+    font-family: acumin-pro, sans-serif;
 }
 
 #janru4{
@@ -214,17 +242,19 @@ li{
 }
 
 #item5{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 #item6{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 #box4{
@@ -233,17 +263,20 @@ li{
 }
 
 #item7{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
+
 #item8{
-     border: solid 0.5px black;
+    font-family:poleno, sans-serif; 
+     border: solid 0.5px #eee;
     margin: 100px;
     padding: 5px;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 1px 1px 4px;
 }
 
 footer{
@@ -255,3 +288,11 @@ footer{
     background-color: #555;
     height: 55px;
 }
+
+
+
+
+
+
+
+
