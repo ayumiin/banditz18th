@@ -20,7 +20,7 @@
 
 .main-visual h{
     border: 0.5px solid #fff;
-    
+    margin-left: 500px;
     width: 400px;
     position: absolute;
     color: #fff;
@@ -29,10 +29,10 @@
     font-size: 70px;
     font-family: acumin-pro, sans-serif; 
 font-weight: 500; 
-    font-style: normal;}
+    font-style: normal;
+}
 
 ul{
-    width: 100%;
     display: flex;
     justify-content: center;
     list-style: none;
