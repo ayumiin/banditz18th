@@ -21,12 +21,13 @@ ul{
 }
 
 li{
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     margin: 30px;
     margin-top: 50px;
-    font-family:poleno, sans-serif; 
-    font-weight: 500;
+    font-family: acumin-pro, sans-serif; 
+    font-weight: 700; 
+font-style: normal;
 }
 
 #slide img{
@@ -36,19 +37,20 @@ li{
     height: 100vh;
 }
 
-#logo h{
+#logo h {
+    text-align: center;
     border: 1px solid #fff;
-    background: #fff;
     position: absolute;
-    height: 90px;
-    width: 400px;
-    padding-left: 50px;
+    height: 150px;
+    width: 450px;
+    margin-left:500px;
+    padding-bottom: 20px;
     margin-top: 400px;
-    color: black;
+    color: #fff;
     font-size: 80px;
-    font-family:  canada-type-gibson, sans-serif; 
-    font-style: normal;
-    font-weight: 700;
+    font-family: acumin-pro, sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
 }
 
 .main-visual{
@@ -56,17 +58,17 @@ li{
 }
 
 #logo p{
-    background: #fff;
+    font-family: acumin-pro, sans-serif; 
+font-weight: 600; 
+font-style: normal;
+    margin-left: 620px;
     position: absolute;
-    color: black;
+    color: #fff;
     width: 200px;
     height: 50px;
     margin-top: 510px;
     padding-left: 50px;
     font-size: 40px;
-    font-family:  canada-type-gibson, sans-serif; 
-    font-style: normal;
-    font-weight: 700;
 }
 
 .content{
@@ -226,6 +228,6 @@ footer{
     text-align: center;
     color: #fff;
     background-color: #555;
-    height: 15px;
+    height: 40px;
 }
 

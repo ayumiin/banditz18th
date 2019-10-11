@@ -19,16 +19,16 @@
 
 
 .main-visual h{
-    border: 0.5px solid #fff;
-    
+    border: 1px solid #fff;
     width: 400px;
+    padding-left: 110px;
     position: absolute;
     color: #fff;
     margin-top: 160px;
-    text-align: center;
+    margin-left: 500px;
     font-size: 70px;
     font-family: acumin-pro, sans-serif; 
-font-weight: 500; 
+font-weight: 600; 
     font-style: normal;}
 
 ul{
@@ -56,7 +56,7 @@ li{
 
 .content{
     width: 100%;
-    height: 2900px;
+    height: 3500px;
     
 }
 
@@ -73,6 +73,7 @@ li{
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 50px;
     border: solid 1px 
 }
 #box1{
@@ -193,6 +194,10 @@ li{
     box-shadow: 2px 2px 8px;
 }
 
+#item3 .button{
+    margin-top: 40px;
+}
+
 #item4{
      border: solid 0.5px black;
     margin: 100px;
@@ -240,6 +245,17 @@ li{
 }
 
 #item8{
+     border: solid 0.5px black;
+    margin: 100px;
+    padding: 5px;
+    box-shadow: 2px 2px 8px;
+}
+#box5{
+    display: flex;
+    justify-content: center;
+}
+
+#item9{
      border: solid 0.5px black;
     margin: 100px;
     padding: 5px;
