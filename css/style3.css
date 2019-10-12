@@ -5,6 +5,9 @@
 }
 
 
+body{
+   background-color:#dfd3c3;
+}
 .main-visual{
     width: 100%;
     height: 460px;
@@ -32,22 +35,109 @@ font-weight: 600;
     font-style: normal;}
 
 
-ul{
 
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 20px;
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+}
+.global-nav {
+  position: fixed;
+  right: -320px; /* これで隠れる */
+  top: 0;
+  width: 300px; /* スマホに収まるくらい */
+  height: 100vh;
+ padding: 100px 10px 10px 10px;
+  background-color: #dfd3c3;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 80px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav__item {
+  text-align: center;
+  padding: 20px 14px;
+}
+.global-nav__item a {
+    font-family:poleno, sans-serif;
+    font-size: 40px;
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #fff;
+}
+.global-nav__item a:hover {
+  background-color: #eee;
+}
+.hamburger__line {
+  position: absolute;
+  left: 1px;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 20px;
+}
+.hamburger__line--2 {
+  top: 30px;
+}
+.hamburger__line--3 {
+  top: 40px;
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
 }
 
-li{
-    text-align: center;
-    font-family:poleno, sans-serif; 
-    font-weight: 700;
-    border-left: solid 1px black;
-    font-size: 25px;
-    width: 250px;  
-}
+
 
 li a{
     color: #555;
@@ -58,11 +148,6 @@ li a:hover{
     color: black;
 }
 
-#home{
-    border-left: none;
-    
-}
-
 .content{
     width: 100%;
     height: 3550px;
@@ -70,25 +155,35 @@ li a:hover{
 }
 
 .top-title h{
+     text-align: center;
+    margin-left: 340px;
+    color: #555;/*文字色*/
+  padding:  5px;/*上下の余白*/
+  border-bottom: solid 10px #857671;/*下線*/
     color: #555;
-    padding-left: 510px;
     font-family:poleno, sans-serif; 
-    font-weight: 700;
-    font-size: 60px;
+    font-weight: 5600;
+    font-size: 50px;
+    
 }
 
 .top-title{
-    background-color: #fff;
-    padding-top: 40px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    background-color: #f0ece2;
+    padding-top: 60px;
+    margin-top: 40px;
+    padding: 60px 155px;
+    margin-left: 150px;
+    margin-right: 150px;
     padding-bottom: 50px;
-    border: solid 0.5px #555;
+    border: solid 0.5px #f0ece2;
 }
 #box1{
     display: flex;
     justify-content: center;
+}
+
+.item{
+    background-color: #fff;
 }
 
 .item h1 {
@@ -103,18 +198,20 @@ li a:hover{
 
 #item1{
     font-family:poleno, sans-serif; 
-    border: solid 0.5px #eee;
+    border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #item2{
     font-family:poleno, sans-serif; 
-    border: solid 0.5px #eee;
+    border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#item2 .button{
+    padding-top: 10px;
 }
 
 .button{
@@ -158,6 +255,7 @@ li a:hover{
 
 
 #METAL{
+    margin: 5px;
     float: left;
     border: solid 1px #eee;
     border-radius: 50%;
@@ -171,6 +269,7 @@ li a:hover{
 }
 
 #POP{
+    margin: 5px;
     float: left;
     border: solid 1px #eee;
     border-radius: 50%;
@@ -184,6 +283,7 @@ li a:hover{
 }
 
 #PUNK{
+    margin: 5px;
     float: left;
     border: solid 1px #eee;
     border-radius: 50%;
@@ -203,22 +303,20 @@ li a:hover{
 
 #item3{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #item3 .button{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #item4{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #janru4{
@@ -236,18 +334,16 @@ li a:hover{
 
 #item5{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+   box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #item6{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #box4{
@@ -258,18 +354,20 @@ li a:hover{
 #item7{
     font-family: acumin-pro, sans-serif; 
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#item7 .button{
+    padding-top: 10px;
 }
 
 #item8{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 #box5{
     display: flex;
@@ -279,10 +377,9 @@ li a:hover{
 #item9{
     font-family: acumin-pro, sans-serif; 
 font-weight: 600; 
-     border: solid 0.5px #eee;
+     border: solid 0.5px #fcf9f4;
     margin: 100px;
-    padding: 5px;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 footer{
