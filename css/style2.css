@@ -19,6 +19,7 @@ body{
     position: absolute;
     width: 100%;
     height: 440px;
+    margin-bottom: 100px;
     
 }
 
@@ -154,7 +155,7 @@ li a:hover{
 
 .content{
     width: 100%;
-    height: 2850px;
+    height: 2600px;
     
 }
 
@@ -168,12 +169,12 @@ li a:hover{
 
 
 .top-title{
-    margin-top: 40px;
+    margin-top: 0px;
     padding: 60px 166px;
     background-color: #f0ece2;
     margin-left: 150px;
     margin-right: 150px;
-    border: solid 0.5px #;
+    border: solid 0.5px ;
 }
 #box1{
     display: flex;
