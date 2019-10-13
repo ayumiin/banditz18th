@@ -118,6 +118,7 @@ font-style: normal;
 }
 
 #button1 a{
+    background-color: #eee;
     color: #00acee;
     margin-left: 580px;
     font-size: 16px;
@@ -141,6 +142,7 @@ font-style: normal;
 }
 
 #button2 a{
+    background-color: #eee;
     overflow:hidden;
     margin-top: 00px;
     font-size: 16px;
@@ -348,13 +350,45 @@ footer{
     height: 40px;
 }
 
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition:all 0.5s;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width : 480px){ 
+
+body{
+    background-color: #f0ece2;
+}    
+
+  
 #slide img{
-        width: 380px;
-        height: 300px;
+    
+        width: 390px;
+        height: 250px;
     }
 
+    .main-visual{
+        height: 250px;
+    }    
+    
     #navi{
         display: none;
     }    
@@ -371,9 +405,9 @@ footer{
 }
 .global-nav {
   position: fixed;
-  right: -300px; /* これで隠れる */
+  right: -380px; /* これで隠れる */
   top: 0;
-  width: 510px; /* スマホに収まるくらい */
+  width: 310px; /* スマホに収まるくらい */
   height: 100vh;
  padding: 100px 10px 10px 10px;
   transition: all .6s;
@@ -400,6 +434,7 @@ footer{
   padding: 20px 14px;
 }
 .global-nav__item a {
+    
     font-family:poleno, sans-serif;
     font-size: 30px;
   display: block;
@@ -484,7 +519,7 @@ li a:hover{
     width: 380px;
     margin-left:00px;
     padding-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 100px;
     color: #fff;
     font-size: 40px; 
      font-family:poleno, sans-serif;
@@ -499,34 +534,42 @@ font-style: normal;
     margin-left: 110px;
     position: absolute;
     color: #fff;
-    width: 380px;
+    width: 10%;
     height: 50px;
-    margin-top: 170px;
+    margin-top: 150px;
     padding-left: 50px;
     font-size: 15px;
 }
     
     
 .content{
-    width: 380px;
+    width: 100%;
+
     margin: 0 auto;
 }
 
 #about{
-    display: block;
-    margin-top: -300px;
-    padding-top: 300px;
+     margin-right: 0px;
+    padding-top: 0px;
+   
+    
 }
 
+#nextlive{
+        
+    }
+    
 #member{
+    margin-right: 0px;
+    width: 300px;
     display: block;
     margin-top: 0px;
     padding-top: 0px;
 }
 
 #contents1{
-    padding-top: 350px;
-    height: 250px;
+    padding-top: 360px;
+    height: 0px;
 }
 
 .top-title{
@@ -537,7 +580,7 @@ font-style: normal;
     padding-left: 13px;
     color: #555;
     font-size: 40px;
-    width: 380px;
+    width: 300px;
 }
 
 #contents1 p{
@@ -594,7 +637,7 @@ font-style: normal;
 
 #contents2{
     height: 700px;
-    width: 380px;
+    width: 100%;
 }
 
 .container{
@@ -603,8 +646,8 @@ font-style: normal;
 
 .item1{
     font-size: 10px;
-    margin-right: 50px;
-    margin-left: 250px;
+    margin-right: 30px;
+    margin-left: 10px;
   display: inline-block;
   text-decoration: none;
   background-image:url(1462092.jpg);
@@ -633,7 +676,7 @@ font-style: normal;
      font-size: 10px;
     margin-right: 50px;
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 10px;
   display: inline-block;
   text-decoration: none;
   background-image:url(G.jpg);
@@ -660,9 +703,9 @@ font-style: normal;
 
 
 .item3{
+    margin-right: 0px;
     margin-bottom: 50px;
      font-size: 10px;
-    margin-right: 260px;
   display: inline-block;
   text-decoration: none;
  background-image: url(B.jpg);
@@ -689,6 +732,7 @@ font-style: normal;
 }
 
 .item4{
+    margin-right: 0px;
      font-size: 10px;
     margin: auto 0;
   display: inline-block;
@@ -721,13 +765,15 @@ font-style: normal;
 
 
     
-.box{
-        position: absolute;
+.box{width: 300px;
+    margin-right: 0px;
+margin-left: 60px;
+    margin-top: 400px;
     }
 
 footer{
     font-size: 12px;
-    width: 100%;
+    width: 390px;
     padding-top: 20px;
     text-align: center;
     color: #fff;
@@ -753,24 +799,26 @@ footer{
     
 }
 
-.box{
+.map{
+
     text-align: center;
-    width: 360px;
+    width: 310px;
 
 }
 
-.box h1{
+.map h1{
+
     width: 300px;
     border-bottom: 1px solid #eee;
     margin-top: 400px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 10px;
     font-family: acumin-pro, sans-serif; 
     font-weight: 700;
     display: block;
 }
 
-.box p1{
+.map p1{
     width: 380px;
     padding-right: 80px;
     font-family: acumin-pro, sans-serif; 
@@ -787,19 +835,19 @@ footer{
 }
 
 .box p3 {
+    margin-left: 50px;
     font-family: acumin-pro, sans-serif; 
     line-height: 40px;
-    width: 380px;
-    padding-left: 10px;
-    font-size: 15px;
+    width: 0px;
+    font-size: 10px;
 }
 
 .box p4 {
-    font-family: acumin-pro, sans-serif; 
-    line-height: 40px;
+    margin-left: 50px;
+    font-family: acumin-pro, sans-serif;
     width: 380px;
-    padding-right: 50px;
-    font-size: 15px;
+    padding-right: 0px;
+    font-size: 10px;
 }
     
     

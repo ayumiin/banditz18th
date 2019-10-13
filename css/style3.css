@@ -6,11 +6,11 @@
 
 
 body{
-   background-color:#dfd3c3;
+   background-color:#f0ece2;
 }
 .main-visual{
     width: 100%;
-    height: 460px;
+    height: 350px;
 
 }
 .main-visual img{
@@ -150,32 +150,18 @@ li a:hover{
 
 .content{
     width: 100%;
-    height: 3550px;
+    height: 3400px;
     
 }
 
-.top-title h{
-     text-align: center;
-    margin-left: 340px;
-    color: #555;/*文字色*/
-  padding:  5px;/*上下の余白*/
-  border-bottom: solid 10px #857671;/*下線*/
-    color: #555;
-    font-family:poleno, sans-serif; 
-    font-weight: 5600;
-    font-size: 50px;
-    
-}
 
 .top-title{
-    background-color: #f0ece2;
     padding-top: 60px;
     margin-top: 40px;
     padding: 60px 155px;
     margin-left: 150px;
     margin-right: 150px;
     padding-bottom: 50px;
-    border: solid 0.5px #f0ece2;
 }
 #box1{
     display: flex;
@@ -198,14 +184,14 @@ li a:hover{
 
 #item1{
     font-family:poleno, sans-serif; 
-    border: solid 0.5px #fcf9f4;
+    border: solid  5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #item2{
     font-family:poleno, sans-serif; 
-    border: solid 0.5px #fcf9f4;
+    border: solid 5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -303,7 +289,7 @@ li a:hover{
 
 #item3{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid  5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -314,7 +300,7 @@ li a:hover{
 
 #item4{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid  5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -334,14 +320,14 @@ li a:hover{
 
 #item5{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid 5px #857671;
     margin: 100px;
    box-shadow: 5px 5px 5px #bcbab8;
 }
 
 #item6{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid 5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -354,7 +340,7 @@ li a:hover{
 #item7{
     font-family: acumin-pro, sans-serif; 
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid 5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -365,7 +351,7 @@ li a:hover{
 
 #item8{
     font-family:poleno, sans-serif; 
-     border: solid 0.5px #fcf9f4;
+     border: solid 5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -377,7 +363,7 @@ li a:hover{
 #item9{
     font-family: acumin-pro, sans-serif; 
 font-weight: 600; 
-     border: solid 0.5px #fcf9f4;
+     border: solid 5px #857671;
     margin: 100px;
     box-shadow: 5px 5px 5px #bcbab8;
 }
@@ -391,3 +377,454 @@ footer{
     background-color: #555;
     height: 55px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 480px){
+
+
+    
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color:#f0ece2;
+    
+}
+
+
+.main-visual{
+    width: 380px;
+    height: 150px;
+
+}
+.main-visual img{
+    position: absolute;
+    width: 380px;
+    height: 160px;
+    margin-bottom: 0px;
+    
+}
+
+
+.main-visual h{
+   
+    border: 0.5px solid #fff;
+    width: 380px;
+    margin-left: 0px;
+    margin-top: 60px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: acumin-pro, sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
+}
+
+
+
+
+.header {
+    display: table;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+}
+.global-nav {
+  position: fixed;
+  right: -300px; /* これで隠れる */
+  top: 0;
+  width: 180px; /* スマホに収まるくらい */
+  height: 100vh;
+ padding: 100px 10px 10px 10px;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 30px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.global-nav__list {
+    display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav__item {
+  text-align: center;
+  padding: 20px 14px;
+}
+.global-nav__item a {
+    font-family:poleno, sans-serif;
+    font-size: 30px;
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #fff;
+}
+.global-nav__item a:hover {
+  background-color: #eee;
+}
+.hamburger__line {
+  position: absolute;
+  left: 1px;
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 10px;
+}
+.hamburger__line--2 {
+  top: 15px;
+}
+.hamburger__line--3 {
+  top: 20px;
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .black-bg {
+  opacity: .6;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+
+
+li a{
+    color: #555;
+    transition: 0.4s;
+}
+
+li a:hover{
+    color: black;
+}
+    
+
+.content{
+    width: 100%;
+    height: 1600px;
+    
+}
+
+
+
+.janru{
+}
+
+
+
+
+.top-title{
+    padding: 0px 25px;
+    background-color: #f0ece2;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#box1{
+    display: flex;
+    justify-content: center;
+}
+  
+    .item img{
+        width: 150px;
+    }  
+    
+    .item{
+        width: 150px;
+        height: 250px;
+    }
+
+.item h1 {
+    font-size: 17px;
+    border-bottom: solid #eee 1px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.item p{
+    font-size: 8px;
+    text-align: center;
+}
+
+#item1{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+    border: solid 5px #857671;;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+    
+}
+
+#item2{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+    border: solid 5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+#item2 .button{
+    padding-top: 0px;
+}
+
+.button{
+    float: left;
+    margin: 10px;
+    width: 50px;
+}
+
+#button1 a{
+    margin-left: 12px;
+    color: #00acee;
+    font-size: 5px;
+    padding: 3px 12px;
+    background: #fff;
+    border: 1px solid #00acee;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#button1 a:hover{
+    background: #00caee;
+    color:#fff;
+}
+
+#button2 a{
+    overflow:hidden;
+    margin-top: 00px;
+    font-size: 5px;
+    padding: 3px 11px;
+    color:#c6529a;
+    border: 1px solid #c6529a;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#button2 a:hover{
+    background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    color:#fff;
+}
+
+
+#METAL{
+    float: left;
+    border: solid 1px #eee;
+    border-radius: 50%;
+    width: 30px;
+    height: 18px;
+    background-color:#2e3634;
+    color:#fff;
+    font-size: 5px;
+    padding-top: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#POP{
+    float: left;
+    border: solid 1px #eee;
+    border-radius: 50%;
+    width: 30px;
+    height: 18px;
+    background-color:#148B90;
+    color:#fff;
+    font-size: 5px;
+    padding-top: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#PUNK{
+    float: left;
+    border: solid 1px #eee;
+    border-radius: 50%;
+    width: 30px;
+    height: 18px;
+    background-color:#981D50;
+    color:#fff;
+    font-size: 10px;
+    padding-top: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#box2{
+    display: flex;
+    justify-content: center;
+}
+
+#item3{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#item4{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#item4 h1{
+    font-family: acumin-pro, sans-serif;
+}
+
+#janru4{
+    margin-top: 0px;
+}
+
+#item3 .button{
+    margin-top: 10px;
+}
+    
+#item4 .button{
+    margin-top: 10px;
+}
+
+#box3{
+    display: flex;
+    justify-content: center;
+}
+
+#item5{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid  5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#item6{
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+
+#box4{
+    display: flex;
+    justify-content: center;
+}
+
+#item7{
+    padding-bottom: 10px;
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #bcbab8;
+}
+#item7 .button{
+    padding-bottom: 0px;
+}
+
+#item7 .button{
+    margin-top: 0px;
+}
+
+#item8{
+    padding-bottom: 10px;
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+    margin: 15px;
+   box-shadow: 5px 5px 5px #bcbab8;
+}
+#item8 .button{
+    margin-top: 0px;
+}
+    
+#item9{
+    padding-bottom: 0px;
+    background-color: #fff;
+    font-family:poleno, sans-serif; 
+     border: solid 5px #857671;
+   box-shadow: 5px 5px 5px #bcbab8;
+}    
+#item9 .button{
+    margin-left: 0px;
+    margin: 12px;
+}
+    
+#item9 .button{
+    padding-bottom: 0px;
+}
+
+footer{
+    font-size: 12px;
+    width: 100%;
+    padding-top: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #555;
+    height: 30px;
+}
+    
+    
+
+
+}
+
+
